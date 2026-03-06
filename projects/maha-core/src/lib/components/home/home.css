@@ -20,6 +20,84 @@
   z-index: 2;
 }
 
+/* Hanging Card Animation */
+.hanging-card {
+  position: absolute;
+  top: -10px;
+  width: 160px;
+  z-index: 5;
+  transform-origin: top center;
+}
+
+.right-card {
+  right: 10%;
+  animation: swing 5s ease-in-out infinite;
+}
+
+.left-card {
+  left: 8%; /* Placed out of the way on the left */
+  animation: swing-long 6.5s ease-in-out infinite;
+  z-index: 3; /* Push slightly behind if anything overlaps */
+}
+
+.thread {
+  width: 2px;
+  height: 60px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}
+
+.left-card .thread {
+  height: 140px; /* Hangs significantly longer */
+}
+
+.pin {
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.card-content {
+  background-color: #FFF;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  border: 4px solid var(--surface-color);
+}
+
+.card-content img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.event-tag {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+}
+
+@keyframes swing-long {
+  0%, 100% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+}
+
 /* Hard-coded cloud effect approximation from JoyParty */
 .cloud-wave-bg {
   position: absolute;
@@ -66,14 +144,18 @@
   text-align: left;
   transition: transform 0.3s ease;
 }
-.info-card.active-card {
+.info-card:hover {
   background-color: var(--primary-color);
   color: #FFF;
   transform: translateY(-10px);
 }
-.info-card.active-card .card-title,
-.info-card.active-card .card-desc {
+.info-card:hover .card-title,
+.info-card:hover .card-desc {
   color: #FFF;
+}
+.info-card:hover .card-icon {
+  background-color: #FFF;
+  color: var(--primary-color);
 }
 
 .card-icon {

@@ -8,7 +8,8 @@
 .cta-section {
   text-align: center;
   padding: 4rem 20px;
-  background-color: #FAF4EB; /* Slightly varied cream backgound layer */
+  background-color: #FAF4EB;
+  /* Slightly varied cream backgound layer */
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
 }
@@ -32,22 +33,26 @@
 .cta-input {
   flex: 1;
   padding: 12px 25px;
-  border-radius: 50px; /* Pill input */
+  border-radius: 50px;
+  /* Pill input */
   border: none;
   background-color: #FFF;
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--text-secondary);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   outline: none;
 }
+
 .cta-input:focus {
-  box-shadow: 0 4px 15px rgba(242, 111, 84, 0.15); /* Soft coral shadow */
+  box-shadow: 0 4px 15px rgba(242, 111, 84, 0.15);
+  /* Soft coral shadow */
 }
 
 /* Main Footer Container */
 .main-footer {
-  background-color: #F8F1E5; /* Lightly shaded beige */
+  background-color: #F8F1E5;
+  /* Lightly shaded beige */
   padding: 4rem 5% 0;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -117,6 +122,7 @@
   cursor: pointer;
   transition: transform 0.2s;
 }
+
 .circle-icon:hover {
   transform: translateY(-2px);
 }
@@ -150,6 +156,7 @@
   align-items: center;
   gap: 8px;
 }
+
 .hours-desc {
   font-size: 0.95rem;
   line-height: 1.6;
