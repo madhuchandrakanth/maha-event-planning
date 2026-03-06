@@ -1,0 +1,47 @@
+.maha-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.1);
+    /* Glass effect */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    /* Gold border */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    /* Use a grand font */
+    font-weight: 800;
+    color: #4B0082;
+    /* Royal Purple */
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.plan-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: #D4AF37;
+    /* Champagne Gold */
+    text-transform: lowercase;
+}
+
+.create-btn {
+    background: linear-gradient(45deg, #4B0082, #6A0DAD);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(75, 0, 130, 0.3);
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(75, 0, 130, 0.5);
+}
