@@ -7,8 +7,8 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "maha-core": ["./dist/maha-core"],
-      "maha-shared": ["./dist/maha-shared"]
+      "maha-core": ["./projects/maha-core/src/public-api.ts"],
+      "maha-shared": ["./projects/maha-shared/src/public-api.ts"]
     },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

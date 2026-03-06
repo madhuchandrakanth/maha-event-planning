@@ -1,0 +1,165 @@
+.footer-wrapper {
+  margin-top: 4rem;
+  background-color: var(--background-color);
+  position: relative;
+}
+
+/* CTA Newsletter Section */
+.cta-section {
+  text-align: center;
+  padding: 4rem 20px;
+  background-color: #FAF4EB; /* Slightly varied cream backgound layer */
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+
+.cta-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.cta-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-input {
+  flex: 1;
+  padding: 12px 25px;
+  border-radius: 50px; /* Pill input */
+  border: none;
+  background-color: #FFF;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  outline: none;
+}
+.cta-input:focus {
+  box-shadow: 0 4px 15px rgba(242, 111, 84, 0.15); /* Soft coral shadow */
+}
+
+/* Main Footer Container */
+.main-footer {
+  background-color: #F8F1E5; /* Lightly shaded beige */
+  padding: 4rem 5% 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  color: var(--text-secondary);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(138, 110, 130, 0.2);
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.brand-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cupcake-icon {
+  background-color: #ffebd6;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 1.5rem;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+.social-circles {
+  display: flex;
+  gap: 10px;
+}
+
+.circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.circle-icon:hover {
+  transform: translateY(-2px);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--secondary-color);
+}
+
+.time-text {
+  font-weight: 700;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hours-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Footer Copyright Base */
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
